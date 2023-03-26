@@ -38,7 +38,7 @@
                     <td>{{ $user->status }}</td>
                     <td>{{ $user->role }}</td>
                     <td>
-                      <a href="" class="btn btn-sm btn-info">Edit</a>
+                      <a href="{{ url('users/edit').'/'.$user->id }}" class="btn btn-sm btn-info">Edit</a>
                       <a href="{{ url('users/delete').'/'.$user->id }}" class="btn btn-sm btn-danger">Delete</a>
                     </td>
                   </tr>

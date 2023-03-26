@@ -21,3 +21,5 @@ Route::get('users/index', [UserController::class, 'index']);
 Route::get('users/create', [UserController::class, 'create']);
 Route::post('users/store', [UserController::class, 'store']);
 Route::get('users/delete/{id}', [UserController::class, 'delete']);
+Route::get('users/edit/{id}', [UserController::class, 'edit']);
+Route::post('users/update/{id}', [UserController::class, 'update']);
